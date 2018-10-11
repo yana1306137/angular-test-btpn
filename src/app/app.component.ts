@@ -120,9 +120,8 @@ export class AppComponent {
   }
 
   filterNama(nama) {
-    this.tempNasabah = this.dataNasabah;
     const val = nama.target.value.toLowerCase();
-    const temp = this.dataNasabah.filter(function(d) {
+    const temp = this.tempNasabah.filter(function(d) {
         return d.nama_nasabah.toLowerCase().indexOf(val) !== -1 || !val;
     });
     this.dataNasabah = temp;

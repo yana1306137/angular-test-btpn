@@ -69,6 +69,7 @@ export class AppComponent {
     });
     this.dataNasabah = temp;
     this.clear();
+    this.tempNasabah = this.dataNasabah;
   }
 
   getDetail(id, idx) {
@@ -108,6 +109,7 @@ export class AppComponent {
     });
     this.dataNasabah = temp;
     this.clear();
+    this.tempNasabah = this.dataNasabah;
   }
 
   deleteDataNasabah(id, idx) {
@@ -117,6 +119,7 @@ export class AppComponent {
         return d.nama_nasabah ? (d.nama_nasabah.toLowerCase().indexOf(val) !== -1 ||  !val) :  !val;
     });
     this.dataNasabah = temp;
+    this.tempNasabah = this.dataNasabah;
   }
 
   filterNama(nama) {
